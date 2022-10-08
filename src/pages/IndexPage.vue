@@ -6,21 +6,17 @@
 
       <q-input
         class="input01"
-        v-model="text"
+        v-model="search"
         placeholder="Search"
         borderless
         dark>
 
         <template v-slot:before>
-          <q-icon name="event" />
+          <q-icon name="my_location" />
         </template>
 
-        <template v-slot:hint>
-          Field hint
-        </template>
-
-        <template v-slot:append>
-          <q-btn round dense flat icon="add" />
+        <template v-slot:append >
+          <q-btn round dense flat icon="search" />
         </template>
       </q-input>
     </div>
@@ -33,7 +29,10 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  data(){
+    
+  }
 })
 </script>
 
@@ -45,7 +44,9 @@ export default defineComponent({
     background: linear-gradient(to bottom, #267871, #136a8a)
 
   .input01
-    margin-left:10px
+    margin:0px 10px 0px 10px
+
+
 
 
 </style>
