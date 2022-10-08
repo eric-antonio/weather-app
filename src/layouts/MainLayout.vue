@@ -1,9 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
 
-
-
-
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -17,7 +14,7 @@ export default defineComponent({
   name: 'MainLayout',
 
   data(){
-    
+
   }
 })
 </script>
