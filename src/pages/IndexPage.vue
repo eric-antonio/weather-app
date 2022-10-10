@@ -12,7 +12,9 @@
         dark>
 
         <template v-slot:before>
-          <q-icon name="my_location" />
+          <q-icon
+            @click="getLocation"
+            name="my_location" />
         </template>
 
         <template v-slot:append >
@@ -38,6 +40,20 @@
       </div>
     </template>
 
+    <template v-else>
+      <div class="col column text-center text-white">
+        <div class="col text-h2 text-weigth-thin">
+          Quasar <br> Weather!
+          <p id="descrição">Desenvolvido por @eric-antonio</p>
+        </div>
+        <q-btn class="col" flat @click="getLocation">
+          <q-icon left size="2em" name="my_location" />
+          <div>FIND MY LOCATION</div>
+        </q-btn>
+      </div>
+
+    </template>
+
 
     <div class="skyline">
 
@@ -60,6 +76,11 @@ export default defineComponent({
       weatherDate:null
     }
 
+  },
+  methods:{
+    getLocation(){
+      console.log('Estou Aqui!!!!!')
+    }
   }
 })
 </script>
@@ -90,6 +111,10 @@ export default defineComponent({
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center bottom
+  }
+  #descrição{
+    text-align: center;
+    font-size: 16px;
   }
 
 </style>
