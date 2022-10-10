@@ -75,7 +75,9 @@ export default defineComponent({
       search:'',
       weatherDate:null,
       lat:null,
-      lon:null
+      lon:null,
+      apiUrl:'https://api.openweathermap.org/data/2.5/weather',
+      apiKey:'c3e6d49156458cb27f9f08065e140e13',
     }
 
   },
@@ -85,7 +87,10 @@ export default defineComponent({
         console.log('position:',position)
         this.lat= position.coords.latitude
         this.lon= position.coords.longitude
+        this.getWeatherByCoords()
       })
+    },getWeatherByCoords(){
+
     }
   }
 })
