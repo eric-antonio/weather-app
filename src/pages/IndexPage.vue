@@ -21,7 +21,8 @@
       </q-input>
     </div>
 
-    <div class="col text-white text-center">
+    <template v-if="weatherDate">
+      <div class="col text-white text-center">
       <div class="text-h4 text-weigth-light">
         Maputo
       </div>
@@ -30,11 +31,13 @@
         <span>23</span>
         <span class="text-h4 relative-position   degree">℃</span>
       </div>
-    </div>
+      </div>
 
-    <div class="col text-center">
+      <div class="col text-center">
       <img src="https://www.fillmurray.com/100/100" alt="Bill">
-    </div>
+      </div>
+    </template>
+
 
     <div class="skyline">
 
@@ -53,7 +56,8 @@ export default defineComponent({
   name: 'IndexPage',
   data(){
     return{
-      search:''
+      search:'',
+      weatherDate:null
     }
 
   }
