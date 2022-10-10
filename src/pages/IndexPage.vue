@@ -73,13 +73,17 @@ export default defineComponent({
   data(){
     return{
       search:'',
-      weatherDate:null
+      weatherDate:null,
+      lat:null,
+      long:null
     }
 
   },
   methods:{
     getLocation(){
-      console.log('Estou Aqui!!!!!')
+      navigator.geolocation.getCurrentPosition(position =>{
+        console.log('position:',position)
+      })
     }
   }
 })
