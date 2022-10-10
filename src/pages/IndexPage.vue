@@ -90,7 +90,7 @@ export default defineComponent({
         this.getWeatherByCoords()
       })
     },getWeatherByCoords(){
-
+      this.$aios(`${ this.apiUrl }?lat=${this.lat }&lon=${this.lon}&appid=${this.apiKey}`)
     }
   }
 })
