@@ -75,7 +75,7 @@ export default defineComponent({
       search:'',
       weatherDate:null,
       lat:null,
-      long:null
+      lon:null
     }
 
   },
@@ -83,6 +83,8 @@ export default defineComponent({
     getLocation(){
       navigator.geolocation.getCurrentPosition(position =>{
         console.log('position:',position)
+        this.lat= position.coords.latitude
+        this.lon= position.coords.longitude
       })
     }
   }
@@ -101,11 +103,7 @@ export default defineComponent({
   .degree
     top: -42px
 
-  .skyline
-    flex: 0 0 100px
-    background:url(../img/townsilhouette1.png )
-    background-size:contain
-    background-position: center bottom
+
 </style>
 
 <style>
