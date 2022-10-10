@@ -21,6 +21,27 @@
       </q-input>
     </div>
 
+    <div class="col text-white text-center">
+      <div class="text-h4 text-weigth-light">
+        Maputo
+      </div>
+      <div class="text-h6 text-weigth-light">Sol</div>
+      <div class="text-h1 text-weight-thin q-my-lg relative-position">
+        <span>23</span>
+        <span class="text-h4 relative-position   degree">℃</span>
+      </div>
+    </div>
+
+    <div class="col text-center">
+      <img src="https://www.fillmurray.com/100/100" alt="Bill">
+    </div>
+
+    <div class="col skuline">
+      
+    </div>
+
+
+
   </q-page>
 </template>
 
@@ -31,7 +52,10 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'IndexPage',
   data(){
-    
+    return{
+      search:''
+    }
+
   }
 })
 </script>
@@ -45,8 +69,8 @@ export default defineComponent({
 
   .input01
     margin:0px 10px 0px 10px
-
-
+  .degree
+    top: -42px
 
 
 </style>
