@@ -36,8 +36,8 @@
       <img src="https://www.fillmurray.com/100/100" alt="Bill">
     </div>
 
-    <div class="col skuline">
-      
+    <div class="skyline">
+
     </div>
 
 
@@ -72,5 +72,20 @@ export default defineComponent({
   .degree
     top: -42px
 
+  .skyline
+    flex: 0 0 100px
+    background:url(../img/townsilhouette1.png )
+    background-size:contain
+    background-position: center bottom
+</style>
+
+<style>
+  .skyline{
+    flex: 0 0 100px;
+    background:url(../img/townsilhouette2.png );
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center bottom
+  }
 
 </style>
