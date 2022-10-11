@@ -79,7 +79,6 @@ export default defineComponent({
       apiUrl:'https://api.openweathermap.org/data/2.5/weather',
       apiKey:'c3e6d49156458cb27f9f08065e140e13',
     }
-
   },
   methods:{
     getLocation(){
@@ -95,7 +94,6 @@ export default defineComponent({
   }
 })
 </script>
-
 <!-- Style -->
 
 <style lang="sass">
